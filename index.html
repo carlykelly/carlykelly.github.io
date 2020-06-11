@@ -1,49 +1,194 @@
 <!DOCTYPE html>
+
+<!-- CSS Stylesheets with Relative Paths -->
+
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
+  <title>CSS Stylesheets with Relative Paths</title>
+
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body{
+      background-color:#efeee7;
+      color: #333333;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      margin:0 auto; 
+      padding:0px
+    }
+    header{
+        background-color:#333333;
+        padding-top:5px;
+        padding-bottom:5px;
+        margin-bottom:20px
+
+    }
+    h1{
+        color:#eee;
+        font-size:28px;
+        text-align: center;
+        margin-top:5xp;
+        margin-bottom:7px
+    }
+    h2{
+        font-size:24px;
+    }
+    .container{
+        margin: 0 auto;
+        width: 1024px;
+        /*below is for bonus only */
+        min-height:100%
+    }
+    #main-bio{
+        float: left;
+        width: 70%;
+        /*below if for bonus */
+        overflow: auto;
+        padding-bottom:10px
+    }
+    #contact-info{
+        float: left;
+        width: 30%
+    }
+    #bio-image{
+        float: left;
+        width: 200px;
+        margin-right: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px
+
+    }
+    #figure{
+        position: relative;
+        margin-top:70px
+
+    }
+    #bio-name{
+        position: absolute;
+        top: 160px;
+        left:30px;
+        z-index: 2
+    }
+    p{
+        font-size:15px;
+        line-height:1.5em
+    }
+
+    a{
+        color:#d21034
+    }
+    /* For bouns only*/
+    #footer{
+        background-color:#333333;
+        color: #eee;
+        position:fixed;
+        bottom: 0;
+        width:100%;
+        height:45px
+    }
+    #portlabel{
+        color:#333333;
+        text-align:center;
+    }
+    #portfolio{
+        float:left;
+        margin-bottom:45px;
+        
+    }
+    .project-info{
+        width: 50%;
+        float: left;
+        line-height:1.5em
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Carly Kelly</h1>
-  <img src= "Website_Photo.jpg" width = "10%" height = "10%" alt ="Carly's Teacher Picture">
-  <p>My name is Carly Kelly. I'm currently a math teacher for one more day</p>
-  <p>I enjoy rock climbing and hiking!</p>
 
-  <ul>
-      <li><a href = "https://www.instagram.com/carlyf.kelly/" target="_blank">My Instagram Page</a></li>
-      <li><a href = "https://www.facebook.com/carly.fabris">My Facebook Page</a></li>
-      <li><a href = "https://www.linkedin.com/in/carly-kelly-6471a0119/">My linkedin Page</a></li>
-  </ul>
-  <div>
-  <table border="1">
-      <thead>
-          <tr>
-              <th colspan = '3'>My favorite Things</th>
-          </tr>
-          <tr>
-              <th>Activities</th>
-              <th>Bands</th>
-              <th>Colors</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td>Biking</td>
-              <td>The Drums</td>
-              <td>Blue</td>
-          </tr>
-          <tr>
-              <td>Climbing</td>
-              <td>Vampire Weeknd</td>
-              <td>Mint Green</td>
-          </tr>
-      </tbody>
+  <header>
+    <h1>Carly Kelly's Bio</h1>
+  </header>
 
-  </table>
-  </div>
+  <main class="container">
+    <section id="main-bio">
+      <section id="figure">
+        <h2 id="bio-name">Carly Kelly</h2>
+        <img id="bio-image" src="https://placehold.it/200x200" alt="Carly Kelly">
+      </section>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mi erat, porta vitae ipsum at, pharetra ultricies magna. 
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla sit amet mauris leo. 
+        Quisque eget lectus ipsum. Nam vehicula felis ut dui egestas sodales. Aenean vel aliquet turpis. Sed sodales magna vitae 
+        sagittis posuere. Quisque congue nec tellus sed porttitor. Donec non sagittis mi. Sed a venenatis metus. In ac nisl at 
+        sapien rhoncus pharetra ac ac nulla. Maecenas quis pellentesque neque. Sed id dignissim turpis. Curabitur quam enim, 
+        congue ut mi at, egestas dictum nulla. Nam nulla sem, cursus eget vestibulum in, hendrerit ut eros. Aenean lobortis ut 
+        purus eget accumsan. Cras nec pulvinar tortor, at sollicitudin dolor. Pellentesque ultrices interdum turpis et accumsan. 
+        Nullam id lorem ac risus pretium rhoncus. Ut malesuada vehicula dui, et posuere mauris egestas ac. Ut interdum mattis 
+        eros, quis tempus quam vulputate a. Sed tellus sapien, dictum tempor leo eu, tempus semper nulla. Sed feugiat, purus in 
+        porttitor mollis, lectus sapien fringilla tellus, eget ullamcorper risus nunc blandit metus. Phasellus semper consectetur 
+        urna, sed accumsan elit mollis sed.
+    <!--Testing purposes only in the p below this line-->
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mi erat, porta vitae ipsum at, pharetra ultricies magna. 
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla sit amet mauris leo. 
+    Quisque eget lectus ipsum. Nam vehicula felis ut dui egestas sodales. Aenean vel aliquet turpis. Sed sodales magna vitae 
+    sagittis posuere. Quisque congue nec tellus sed porttitor. Donec non sagittis mi. Sed a venenatis metus. In ac nisl at 
+    sapien rhoncus pharetra ac ac nulla. Maecenas quis pellentesque neque. Sed id dignissim turpis. Curabitur quam enim, 
+    congue ut mi at, egestas dictum nulla. Nam nulla sem, cursus eget vestibulum in, hendrerit ut eros. Aenean lobortis ut 
+    purus eget accumsan. Cras nec pulvinar tortor, at sollicitudin dolor. Pellentesque ultrices interdum turpis et accumsan. 
+    Nullam id lorem ac risus pretium rhoncus. Ut malesuada vehicula dui, et posuere mauris egestas ac. Ut interdum mattis 
+    eros, quis tempus quam vulputate a. Sed tellus sapien, dictum tempor leo eu, tempus semper nulla. Sed feugiat, purus in 
+    porttitor mollis, lectus sapien fringilla tellus, eget ullamcorper risus nunc blandit metus. Phasellus semper consectetur 
+    urna, sed accumsan elit mollis sed.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mi erat, porta vitae ipsum at, pharetra ultricies magna. 
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla sit amet mauris leo. 
+        Quisque eget lectus ipsum. Nam vehicula felis ut dui egestas sodales. Aenean vel aliquet turpis. Sed sodales magna vitae 
+        sagittis posuere. Quisque congue nec tellus sed porttitor. Donec non sagittis mi. Sed a venenatis metus. In ac nisl at 
+        sapien rhoncus pharetra ac ac nulla. Maecenas quis pellentesque neque. Sed id dignissim turpis. Curabitur quam enim, 
+        congue ut mi at, egestas dictum nulla. Nam nulla sem, cursus eget vestibulum in, hendrerit ut eros. Aenean lobortis ut 
+        purus eget accumsan. Cras nec pulvinar tortor, at sollicitudin dolor. Pellentesque ultrices interdum turpis et accumsan. 
+        Nullam id lorem ac risus pretium rhoncus. Ut malesuada vehicula dui, et posuere mauris egestas ac. Ut interdum mattis 
+        eros, quis tempus quam vulputate a. Sed tellus sapien, dictum tempor leo eu, tempus semper nulla. Sed feugiat, purus in 
+        porttitor mollis, lectus sapien fringilla tellus, eget ullamcorper risus nunc blandit metus. Phasellus semper consectetur 
+        urna, sed accumsan elit mollis sed.
+    </p>
+    </section>
 
+    <aside id="contact-info">
+      <h2>Contact Info</h2>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:carlyfkelly@gmail.com">carlyfkelly@gmail.com</a></li>
+        <li><strong>Github:</strong> <a href="https://github.com/carlykelly">carlykelly</a></li>
+        <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
+      </ul>
+    </aside>
+    <!--Attempting the Bonus-->
+    <section id="portfolio">
+        <h2 id="portlabel">My Portfolio</h2>
+        
+        <div class = "project-info"><h3>WeatherPy Project</h3>
+            The WeatherPy project used Open Weather API to determine if there was a relationshiop between temperature and latitude 
+            coordinates of various cities. This project was completed in Jupyter Notebook and utilized matplotlib, pandas, and
+            numpy. When creating a loop to make requests from the API it was important to use the wait datetime feature to ensure 
+            more than 60 requests weren't made each minute.
+            <img src= "Lat_vs_Temp.png" alt = "Weather Graph"></div>
+        
+        <div class = "project-info"><h3>Pymacuticals Project</h3>
+            The pymacuticals Project utililzed matplotlib, pandas and python to explore a given data set. The first step was to 
+            ensure all data was reliable. Once this was completed, data had to be grouped in such a way to allow us to create visualizations to show the 
+            results of this study.<br><br><br><br>
+            <img src = "Box-And-Whisker.png" alt = "Tumor Volume Box & Whisker Graph">
+        </div>
+    </section>
+  </main>
+
+  <!-- Attempting the Bonus! -->
+
+
+    <footer id = "footer">
+        <p>Built by Carly Kelly with help of GWU DataBootcamp</p>
+    </footer>
 </body>
 
 </html>
